@@ -1,5 +1,11 @@
 {
-  "Juice 1": {},
-  "Juice 2": {},
-  "Juice 3:": {}
+  "Juice 1": {
+      "name": "Grape soda"
+  },
+  "Juice 2": {
+      "name": "Strawberry"
+  },
+  "Juice 3": {
+      "name": "Lemon lime"
+  }
 }
