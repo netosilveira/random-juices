@@ -1,12 +1,13 @@
-import random
+import json
 
-flavs = ['spear might', 'cola', 'g pnpl', 'sweet mango', 'pineapple', 'ws', 'd watermelon', 'uva', 'pnpl inw']
-sort = random.randint(0,len(flavs))
+path = './flavors.json'
 
-print('sabores disponiveis: ')
+print('[~] Loading flavors from "' + path + '"..')
 
-for i in flavs:
-    print(' -', i)
-
-for i in range(2):
-    print(flavs[sort])
+try:
+    with open(path, 'r') as flavors:
+        flavors = json.load(flavors)
+except:
+    print('Something went wrong when opening the file.')
+else:
+    print('[OK] Flavors loaded')
